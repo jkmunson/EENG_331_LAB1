@@ -1,17 +1,22 @@
 
+
 .model my-npn npn (BF= 100, IS = 5e-17, VJC = 750m)
 Q1 C1 B1 E1 my-npn
 Vin 0 1 SIN(0 10m 500)
-cin 1 C1 1m
+cin 1 E1 1m
 Re E1 0 500
-Vcc Vcc 0 2.5
+Vcc vcc 0 2.5
 Rc Vcc C1 500
 R1 Vcc B1 28096
-R2 B1 0 19981
+R2 B1 0 22.5k
 Cb 0 B1 1m
-Cout C1 8 1m
+Cout C1 8 1m IC=0
 Rout 8 0 100k
 .tran 0 5m 0
-.meas vmax MAX V(Vin)
-.meas imax MAX I(Vin)
+.meas vmax MAX V(1)
+.meas imax MAX I(vin)
 .meas r_in PARAM = 'vmax/imax'
+
+.meas vmax2 MAX V(8)
+.meas imax2 MAX I(Rout)
+.meas r_out PARAM = 'vmax2/imax2'
