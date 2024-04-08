@@ -10,7 +10,7 @@ Rc Vcc C1 500
 R1 Vcc B1 28096
 R2 B1 0 22.5k
 Cb 0 B1 1m
-Cout C1 8 1m IC=0
+Cout C1 8 1m
 Rout 8 0 100k
 .tran 0 5m 0
 .meas vmax MAX V(1)
