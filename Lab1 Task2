@@ -1,0 +1,10 @@
+
+
+.model my-npn npn (BF= 100, IS = .5f, VJC = 750m)
+Q1 C1 B1 E1 my-npn
+Vin 0 1 SIN(0 1m 500)
+Vcc 0 Vcc 2.5
+Rb vcc B1 5930
+Re E1 0 10
+cin 1 B1 1m
+.tran 0 5m 0
