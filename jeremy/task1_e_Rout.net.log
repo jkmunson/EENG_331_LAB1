@@ -1,0 +1,25 @@
+Circuit: * Task 1 A, B, C
+
+Direct Newton iteration for .op point succeeded.
+
+imax: MAX(i(vout))=1.99808e-006 FROM 0 TO 0.006
+r_out: .001/imax=500.48
+
+
+Date: Mon Apr 08 20:07:36 2024
+Total elapsed time: 0.063 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3746
+traniter = 3738
+tranpoints = 1869
+accept = 1569
+rejected = 300
+matrix size = 9
+fillins = 1
+solver = Normal
+Matrix Compiler1: 448 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: off  [0.1]/0.2/0.2
+

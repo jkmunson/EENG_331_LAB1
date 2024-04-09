@@ -1,0 +1,22 @@
+* Task 1 A, B, C
+.model mynpn npn(BF=100, IS=5e-17, VJC=.75)
+
+Vcc Vcc 0 2.5
+
+Q1 Q1C Q1B Q1E mynpn
+
+R1 Vcc Q1B 28906
+R2 Q1B 0 22.8k
+RC Vcc Q1C 500
+RE Q1E 0 500
+
+Cb 0 Q1B 1m
+
+Vin Vin 0 SIN(0 .001 500)
+Cin Vin Q1E 1m
+
+.meas vmax MAX V(Vin)
+.meas imax MAX I(Vin)
+.meas r_in PARAM = vmax/imax
+
+.tran 0 106m 100m
