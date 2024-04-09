@@ -7,13 +7,15 @@ Q1 Vcc Q1B Q1E mynpn
 
 Re Q1E 0 10
 Rb Q1B Vcc 5930
+Cout Q1E Vtest 1m
+Vtest Vtest 0 SIN(0 10m 500)
 
-Vin Vin 0 SIN(0 10m 500)
+Vin Vin 0 SIN(0 0 500)
 Cin Vin Q1B 1m
 
 
-.meas vmax MAX V(Vin)
-.meas imax MAX I(Vin)
+.meas vmax MAX V(Vtest)
+.meas imax MAX I(Vtest)
 .meas r_in PARAM = vmax/imax
 
 .tran 0 106m 100m

@@ -1,0 +1,23 @@
+Circuit: * Task 3 A
+
+WARNING: Node OUT is floating.
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Tue Apr 09 06:31:04 2024
+Total elapsed time: 0.070 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 4657
+traniter = 4649
+tranpoints = 1869
+accept = 1569
+rejected = 300
+matrix size = 10
+fillins = 0
+solver = Normal
+Matrix Compiler1:      31 opcodes  0.2/[0.2]/0.2
+Matrix Compiler2:      64 opcodes  0.2/[0.2]/0.2
+
